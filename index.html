@@ -1,41 +1,81 @@
 <!DOCTYPE html>
 <html lang="ja">
-    <head>
-        <meta charset="utf-8">
-        <title>Profile</title>
-        <meta name="description" content="個人的な自転車についての情報や経験を共有するサイトです。">
-        <link rel="stylesheet" href="css/style.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-    </head>
-    <body>
-        <header>
-            <h1>Profile</h1>
-            <ul>
-                <li>Profile</li>
-                <li>About</li>
+  <head>
+    <meta charset="utf-8">
+    <title>Profile</title>
+    <meta name="description" content="様々な自転車を紹介するサイトです">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+
+  <body>
+    <header class="wrapper" id="header">
+        <a href="index.html"><h1 class="page-title"><img src="images/logo.png" alt="Profile"></h1></a>
+        <nav>
+            <ul class="global-menu">
+                <li>
+                    <a href="#about">About</a>
+                </li>
+                <li>
+                    <a href="#bicycle">Bicycle</a>
+                </li>
             </ul>
-        </header>
-        <main>
-            <div id="mainvisual"></div>
-            <section id="about">
-                <h2>About</h2>
-                <div>
+        </nav>
+    </header>
+
+    <main>
+
+        <div class="main-bg">
+            <img src="images/bg_bicycle1.png" alt="ロードバイクの画像">
+        </div>
+
+        <section id="about" class="wrapper">
+            <h2 class="title">About</h2>
+            <div class="about-contents">
+                <img src="images/man.jpeg" alt="投稿主の画像">
+                <div class="text-area">
                     <h3>KAKERU MIYAICHI</h3>
-                    <p>テキスト</p>
+                    <p class="about-sentence">
+                        皆さん、こんにちは。私の名前はKakeru Miyaichi。自転<br>
+                        車をこよなく愛し、世界中を旅しながら独自の自転車を作<br>
+                        り上げてきました。皆さんにもその喜びを伝えたいです。
+                    </p>
                 </div>
-            </section>
-            <section id="bicycle">
-                <h2>Bicycle</h2>
+            </div>
+        </section>
+
+        
+        <section id="bicycle" class="wrapper">
+            <h2 class="title">Bicycle</h2>
+            <div class="post-contents">
                 <ul>
                     <li>
-                        <h3>タイトル</h3>
-                        <p>テキスト</p>
+                        <img src="images/bicycle1.png" alt="ロードバイクの後ろからの画像">
+                        <h3>タイトルタイトル</h3>
+                        <p>説明文</p>
+                    </li>
+                    <li>
+                        <img src="images/bicycle2.png" alt="駐輪場">
+                        <h3>タイトルタイトル</h3>
+                        <p>説明文</p>
+                    </li>
+                    <li>
+                        <img src="images/bicycle3.png" alt="赤いシティバイク">
+                        <h3>タイトルタイトル</h3>
+                        <p>説明文</p>
                     </li>
                 </ul>
-            </section>
-        </main>
-        <footer>
-            <small>@2020 Profile</small>
-        </footer>
-    </body>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2020 Profile</p>
+    </footer>
+
+  </body>
+
 </html>
