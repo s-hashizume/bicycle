@@ -106,7 +106,11 @@ a:hover {
 
 .post-contents ul {
     display: flex;
+    /* justify-content: space-between; */
+}
 
+.post-contents li {
+    margin: 0 8.1px;
 }
 
 
@@ -124,7 +128,6 @@ li {
 }
 
 .post-contents img {
-    margin-right: 16.2px;
 }
 
 footer {
@@ -151,7 +154,7 @@ footer p {
     }
 
     .post-contents li {
-        margin-bottom: 28px;
+        margin: 0 0 28px 0;
     }
     .post-contents img {
         margin-right: 0;
