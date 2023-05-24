@@ -149,11 +149,16 @@ footer p {
     .post-contents ul {
         flex-direction: column;
     }
+
     .post-contents li {
-        width: 100%;
+        margin-bottom: 28px;
     }
     .post-contents img {
-        padding: 0 15px;
         margin-right: 0;
+        width: 100%;
+    }
+
+    .post-contents h3 {
+        margin: 10px 0;
     }
 }
