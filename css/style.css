@@ -1,0 +1,159 @@
+@charset "UTF-8";
+
+html {
+    font-size: 100%;
+}
+
+body {
+    color: rgba(56, 62, 69, 1);
+}
+
+/*----header----*/
+/* header {
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    align-items: center;
+    margin: 0 auto;
+} */
+
+img {
+    max-width: 100%;
+}
+
+.wrapper {
+    max-width: 960px;/*--コンテンツ幅960pxという指定があるため---*/
+    padding: 0 4%;/*---横のpadding4%という指定があるため---*/
+    margin: 0 auto 100px auto;
+    text-align: center; /*---これを入れないとwrapperの中の要素達がcenterに来ない---*/
+}
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+
+#header ul {
+    display: flex;
+}
+
+.page-title{
+    padding: 10px 0;
+    line-height: 1px;
+}
+
+a {
+    text-decoration: none;
+    font-size: 14.4px;
+    color: rgba(36, 41, 46, 1);
+    display: block;
+}
+
+a:hover {
+    opacity: 0.7;
+    /* color: #0bd; */
+}
+.global-menu li {
+    margin-left: 30px;
+}
+
+.main-bg {
+    /* height: 600px; */
+}
+
+.main-bg img {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;/*---分からなかった--- */
+    margin-bottom: 82px;
+}
+
+.title {
+    color: rgba(56, 62, 69, 1);
+    display: inline-block;
+    border-bottom: solid 1px;
+    margin-bottom: 60px;
+    text-align: center;/*---これが何で入っているのか分からない---*/
+    font-size: 2em;
+}
+
+.about-contents {
+    display: flex;
+    justify-content: center;
+}
+
+.about-contents img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+
+.text-area {
+    text-align: left;
+    padding-left: 28px;
+}
+
+
+.text-area h3 {
+    font-size: 16px;
+}
+.text-area p {
+    margin-top: 10px;
+    font-size: 14.4px;
+}
+
+.post-contents ul {
+    display: flex;
+
+}
+
+
+li {
+    list-style: none;
+}
+
+.post-contents h3 {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.post-contents p {
+    font-size: 14.4px;
+}
+
+.post-contents img {
+    margin-right: 16.2px;
+}
+
+footer {
+    padding: 10px 0;/*---分からなかった--*/
+    text-align: center;
+}
+
+footer p {
+    font-size: 10px;
+}
+
+
+@media (max-width: 600px){
+    .about-contents {
+        display: block;
+    }
+
+    .text-area {
+        padding: 0;
+    }
+
+    .post-contents ul {
+        flex-direction: column;
+    }
+    .post-contents li {
+        width: 100%;
+    }
+    .post-contents img {
+        padding: 0 15px;
+        margin-right: 0;
+    }
+}
