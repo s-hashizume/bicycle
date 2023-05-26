@@ -24,7 +24,7 @@ img {
 .wrapper {
     max-width: 960px;/*--コンテンツ幅960pxという指定があるため---*/
     padding: 0 4%;/*---横のpadding4%という指定があるため---*/
-    margin: 0 auto 100px auto;
+    margin: 0 auto 100px;
     text-align: center; /*---これを入れないとwrapperの中の要素達がcenterに来ない---*/
 }
 
@@ -106,11 +106,13 @@ a:hover {
 
 .post-contents ul {
     display: flex;
+    margin: 0 -8.1px;
     /* justify-content: space-between; */
 }
 
 .post-contents li {
     margin: 0 8.1px;
+    width: 33.33%;
 }
 
 
@@ -127,8 +129,7 @@ li {
     font-size: 14.4px;
 }
 
-.post-contents img {
-}
+
 
 footer {
     padding: 10px 0;/*---分からなかった--*/
@@ -154,7 +155,7 @@ footer p {
     }
 
     .post-contents li {
-        margin: 0 0 28px 0;
+        margin: 0 0 28px;
     }
     .post-contents img {
         margin-right: 0;
