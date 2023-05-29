@@ -152,10 +152,13 @@ footer p {
 
     .post-contents ul {
         flex-direction: column;
+        margin: 0;
     }
 
     .post-contents li {
-        margin: 0 0 28px;
+        width: 100%;
+        margin: 0;
+        margin-bottom: 30px;
     }
     .post-contents img {
         margin-right: 0;
